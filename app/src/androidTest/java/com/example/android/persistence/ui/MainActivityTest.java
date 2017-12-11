@@ -34,6 +34,7 @@ import android.support.test.InstrumentationRegistry;
 import android.support.test.espresso.contrib.RecyclerViewActions;
 import android.support.test.espresso.matcher.ViewMatchers;
 import android.support.test.rule.ActivityTestRule;
+import android.support.test.runner.AndroidJUnit4;
 
 import com.example.android.persistence.AppExecutors;
 import com.example.android.persistence.EspressoTestUtil;
@@ -45,11 +46,13 @@ import org.hamcrest.MatcherAssert;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
+@RunWith(AndroidJUnit4.class)
 public class MainActivityTest {
 
     @Rule
